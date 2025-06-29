@@ -220,7 +220,7 @@ class Patterns {
         }
     }
 
-    // Pattern 17, TC = , SC =
+    // Pattern 17, TC = O(n^2), SC = 1
     public static void patternSeventeen(int n) {
         for (int i = 0; i < n; i++) {
             // inner1 loop
@@ -231,7 +231,7 @@ class Patterns {
             char ch = 'A';
             for (int j = 0; j < (2 * i + 1); j++) {
                 System.out.print(ch + " ");
-                if (j <= n)
+                if (j < (2 * i + 1) / 2)
                     ch++;
                 else
                     ch--;
@@ -240,17 +240,109 @@ class Patterns {
         }
     }
 
-    // Pattern 18,TC=,SC=
+    // Pattern 18,TC = O(n^2), SC = 1
 
     public static void patternEighteen(int n) {
+        for (int i = 0; i < n; i++) {
+            for (char ch = (char) ('E' - i); ch <= 'E'; ch++) {
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
     }
 
-    // Pattern 19, TC = , SC =
+    // Pattern 19, TC = O(n^2), SC = 1
     public static void patternNineteen(int n) {
+        // First part
+        int space = 0;
+        for (int i = 0; i < n; i++) {
+            // print stars
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("* ");
+            }
+
+            // print space
+            for (int j = 0; j < space; j++) {
+                System.out.print("  ");
+            }
+
+            // print stars
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+            space += 2;
+        }
+
+        // Second Part
+        space = 2 * n - 2;
+        for (int i = 0; i < n; i++) {
+            // print stars
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            // print space
+            for (int j = 0; j < space; j++) {
+                System.out.print("  ");
+            }
+
+            // print stars
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+            space -= 2;
+        }
     }
 
-    // Pattern 20, TC = , SC =
+    // Pattern 20, TC = O(n^2), SC = 1
     public static void patternTwenty(int n) {
+        // First Part
+        int space = 2 * n - 2;
+        for (int i = 0; i < n; i++) {
+            // print stars
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            // print space
+            for (int j = 0; j < space; j++) {
+                System.out.print("  ");
+            }
+
+            // print stars
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+            space -= 2;
+        }
+
+        // Second Part
+        space = 2;
+        for (int i = 0; i < n - 1; i++) {
+            // print stars
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print("* ");
+            }
+
+            // print space
+            for (int j = 0; j < space; j++) {
+                System.out.print("  ");
+            }
+
+            // print stars
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+            space += 2;
+        }
     }
 
     // Pattern 21, TC = O(n^2), SC = 1
@@ -270,8 +362,10 @@ class Patterns {
         }
     }
 
-    // Pattern 22, TC = , SC =
+    // Pattern 22, TC = O(n^2), SC = 1
     public static void patternTwentyTwo(int n) {
+        //Doubt
+        ///
     }
 
     public static void main(String args[]) throws IOException {
@@ -301,12 +395,12 @@ class Patterns {
             // patternFourteen(n);
             // patternFifteen(n);
             // patternSixteen(n);
-            // patternSeventeen(n); Doubt
-            // patternEighteen(n); Doubt
-            // patternNineteen(n); pending
-            // patternTwenty(n); pending
-            patternTwentyOne(n);
-            // patternTwentyTwo(n); pending
+            // patternSeventeen(n);
+            // patternEighteen(n);
+            // patternNineteen(n);
+            // patternTwenty(n);
+            // patternTwentyOne(n);
+            // patternTwentyTwo(n);
 
         }
 
