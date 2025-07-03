@@ -91,16 +91,27 @@ public class Problems {
     public static void main(String args[]) {
         try {
             Problems pb = new Problems();
-            int n = inputN();
-            pb.one(1, n);
-            pb.two(1, n);
-            pb.three(n, n);
-            pb.twoBacktracking(n, n);
-            pb.threeBacktracking(1, n);
-            System.out.println("Sum through type A= " + pb.fourTypeA(1, n, 0));
-            System.out.println("Sum through type B= " + pb.fourTypeB(n));
-            System.out.println("Fact through type A= " + pb.fiveTypeA(1, n, 1));
-            System.out.println("Fact through type B= " + pb.fiveTypeB(n));
+            // int n = inputN();
+            // pb.one(1, n);
+            // pb.two(1, n);
+            // pb.three(n, n);
+            // pb.twoBacktracking(n, n);
+            // pb.threeBacktracking(1, n);
+            // System.out.println("Sum through type A= " + pb.fourTypeA(1, n, 0));
+            // System.out.println("Sum through type B= " + pb.fourTypeB(n));
+            // System.out.println("Fact through type A= " + pb.fiveTypeA(1, n, 1));
+            // System.out.println("Fact through type B= " + pb.fiveTypeB(n));
+
+            // int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            // printArr(arr);
+            // pb.sixTypeA(arr, 0, arr.length);
+            // printArr(arr);
+            // pb.sixTypeB(arr, 0, arr.length - 1);
+            // printArr(arr);
+
+            // String str = "MOM";
+            // System.out.println(pb.sevenTypeA(str, 0, str.length() - 1));
+            // System.out.println(pb.sevenTypeB(str, 0));
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
