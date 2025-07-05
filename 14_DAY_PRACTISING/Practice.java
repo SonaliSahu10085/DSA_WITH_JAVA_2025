@@ -95,22 +95,22 @@ public class Practice {
     
     public static void main(String[] args) {
 
-        System.out.println("Day 8: Solid Rectangle");
+        System.out.println("Solid Rectangle");
         solidRectangle(4, 5);
 
-        System.out.println("\nDay 9: Left Half Pyramid");
+        System.out.println("\nLeft Half Pyramid");
         leftHalfPyramid(5);
 
-        System.out.println("\nDay 10: Right Half Pyramid");
+        System.out.println("\nRight Half Pyramid");
         rightHalfPyramid(5);
 
-        System.out.println("\nDay 11: Java Collections");
+        System.out.println("\nJava Collections");
         collectionDemo();
 
-        System.out.println("\nDay 12: Recursion Sum of N (5): " + sumRecursion(5));
+        System.out.println("\nRecursion Sum of N (5): " + sumRecursion(5));
         System.out.println("Is 'madam' Palindrome? " + isPalindrome("madam", 0, 4));
 
-        System.out.println("\nDay 13-14: Hashing Examples");
+        System.out.println("\nHashing Examples");
         int[] arr = {1, 2, 2, 3, 3, 3, 100};
         int[] freqArray = frequencyUsingArray(arr);
         System.out.println("Frequency of 3 using array: " + freqArray[3]);
