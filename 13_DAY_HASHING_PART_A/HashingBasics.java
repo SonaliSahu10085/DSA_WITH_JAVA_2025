@@ -1,5 +1,4 @@
 public class HashingBasics {
-
     // Create a frequency array to store occurrences
     // Adjust size based on max possible element in arr
     static int[] hash = new int[100];
@@ -10,7 +9,6 @@ public class HashingBasics {
             hash[num]++;
         }
     }
-
     // Function to return the count of a queried number
     public static int fn(int q, int[] arr) {
         return hash[q];
